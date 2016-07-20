@@ -1,0 +1,624 @@
+/*General elements styling*/
+h1, h2, h3, h4{
+  letter-spacing: 0;
+}
+
+
+@font-face {
+    font-family: Gz;
+    src: url(../fonts/gzawL.ttf);
+}
+
+@font-face {
+    font-family: Gzb;
+    src: url(../fonts/gzaw.ttf);
+}
+
+
+
+body {
+  font-family: "Martel Sans", "Sans Serif", "Arial";
+  /*font-family: "Roboto Slab";*/
+  font-weight: 300;
+  overflow-x: hidden;
+  /*font-size: 1.8rem;*/
+  /*line-height: 3rem;*/
+}
+
+p{
+  letter-spacing: 0.03rem;
+  line-height: 3.1rem;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+canvas{
+  position: fixed;
+  z-index: 1;
+}
+
+h3{
+  font-size: 1.5rem;
+  text-align:center;
+  padding-top: 1rem;
+  letter-spacing: 0.05rem;
+  padding-bottom: 0.5rem;
+  padding-top: 1rem;
+  color: #666;
+  margin-bottom: 0;
+
+}
+
+h4{
+  font-size: 1.3rem;
+  text-align:center;
+  letter-spacing: 0.03rem;
+  color: #666;
+}
+
+hr{
+  border-top: solid #666 1px;
+}
+
+li {
+  list-style-type: none;
+}
+
+nav{
+  position: fixed;
+  height: 10rem;
+  font-size: 1.3rem;
+  text-align: left;
+  right: 1.4rem;
+  margin: auto;
+  top: 0;
+  bottom:0;
+  padding-bottom: 1rem;
+  z-index: 9998;
+  background-color: none;
+  letter-spacing: 0.5pt;
+}
+
+nav > ul{
+  color: #666;
+  padding-bottom: 1rem;
+  padding-right: 2rem;
+  margin: 0;
+}
+
+nav > ul > li{
+  font-weight: 700;
+  letter-spacing:-0.01rem;
+}
+
+
+/*Main page styling*/
+
+/*1. Spinner*/
+.load-screen{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    background-color: #fff;
+}
+
+
+@keyframes spinner {
+    to {transform: rotate(360deg);}
+}
+
+@-webkit-keyframes spinner {
+    to {-webkit-transform: rotate(360deg);}
+}
+
+.spinner {
+    min-width: 24px;
+    min-height: 24px;
+}
+
+.spinner:before {
+    content: 'Loading…';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    margin-left: -10px;
+}
+
+.spinner:not(:required):before {
+    content: '';
+    border-radius: 50%;
+    border: 2px solid rgba(196, 33, 40, 0.4);
+    border-top-color: rgba(196, 33, 40, 0.8);
+    animation: spinner .6s linear infinite;
+    -webkit-animation: spinner .6s linear infinite;
+}
+
+/*2.Nav*/
+
+
+li.navItem a{
+  font-family: "Martel Sans";
+}
+
+
+nav.pnav {
+  height: 25rem;
+}
+
+
+.divider{
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  right: 8.3rem;
+  top: 0.3rem;
+  border-radius: 0px;
+  background-color: #C42128;
+  z-index: 10000;
+
+}
+
+
+#logo_small{
+  position: fixed;
+  right: 4.7rem;
+  height: 5rem;
+  top: 2rem;
+  z-index: 10000;
+  opacity: 0;
+}
+
+
+/*3. Flow of page*/
+
+#home{
+  height: 100vh;
+
+}
+
+.home-container{
+  height: 100vh;
+  width: 100vw;
+  background-image:url(../img/logo_text.png);
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+}
+
+.out-container{
+  position: absolute;
+  z-index: 2;
+}
+
+.hero-1{
+  display: block;
+  position: relative;
+  width: 100vw;
+  top: 0vh;
+  display: none;
+  margin: auto auto;
+}
+
+
+div.gridItem{
+  margin-bottom: 3rem;
+  display: inline-block;
+  width: 15rem;
+}
+
+
+.gridItem h4{
+  margin-bottom: 4rem;
+}
+
+
+.section{
+  width: 100vw;
+  height: auto;
+}
+
+#wave{
+  background-image: url("../img/wave.png");
+  background-size: cover;
+  background-position:top;
+  background-repeat: no-repeat;
+  bottom:0vh;
+  width: 100vw;
+  height: 17vh;
+  position: fixed;
+  z-index: 9997;
+}
+
+.hero-transition{
+  width: 100vw;
+}
+
+.gallery img{
+  width: 100%;
+  display: block;
+  margin:auto;
+}
+
+
+#about .gallery{
+  padding-top: 0.7rem;
+}
+
+.reg-container{
+  position: relative;
+  width: 80vw;
+  margin: auto;
+}
+
+
+#contact{
+  height: 100vh;
+  background-color: #333;
+}
+
+.contact-container{
+  position: fixed;
+  height: 35rem;
+  width: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  visibility: hidden;
+}
+
+.contact-container img{
+  height: 15rem;
+  padding-bottom: 1rem;
+}
+
+#contact > p i{
+  font-size: 2.5rem;
+  color: #c33;
+}
+
+.about-container{
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100vw;
+}
+
+#portfolio{
+  height: 100vh;
+  width: 100vw;
+
+}
+
+.portfolio-container{
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top:0;
+  visibility: hidden;
+}
+
+.portfolio-container h2{
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  width: auto;
+  font-weight: 800;
+  letter-spacing: -0.3rem;
+  color: #555;
+}
+
+.about-container > img {
+  width: 100%;
+}
+
+.about-container > .reg-container{
+  padding-top: 20rem;
+  margin-bottom: 0;
+}
+
+#contact{
+  height: 180vh;
+  background-color: #333;
+
+  left: 0;
+  right: 0;
+}
+
+#portfolio{
+
+}
+
+#filler{
+  width: 20rem;
+  display: block;
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: -20rem;
+}
+
+#inTrigger{
+  height: 0vh;
+  margin: auto;
+}
+
+
+#about {
+  color: #ccc;
+}
+
+.about-container .reg-container{
+  height: 110vh;
+}
+
+
+#portrait{
+  position: fixed;
+  left: 5vw;
+  bottom: 0;
+  height: 80vh;
+  z-index: 10000;
+}
+
+.aboutText1 {
+  vertical-align: middle;
+  position: fixed;
+  top: 0;
+  left: 42vw;
+  width: 40vw;
+  margin-bottom: 0;
+  font-family: martel;
+}
+
+.aboutText1 span{
+  font-family: 'martel sans';
+}
+
+.portfolio{
+  display: table;
+}
+
+.project{
+  width: 25vw;
+  height: 100vh;
+  left:0;
+  display: inline-block;
+  margin: 0;
+  display: table-cell;
+}
+
+.aboutText1 span:first-child{
+  font-weight: 800;
+  font-size: 2.5rem;
+  letter-spacing: -0.06rem;
+  line-height: 3.5rem;
+  display: block;
+}
+
+#fadeTrigger{
+  height: 10vh;
+}
+
+#fadeBox{
+  visibility: hidden;
+}
+
+.gray-bg{
+  background-color: #333;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right:0;
+  visibility: hidden;
+  z-index: -1;
+}
+
+.resume{
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+
+}
+
+.resume > a{
+  padding: 1rem 2rem;
+  border: solid #c33 1px;
+  color: #c33;
+  font-weight: 400;
+
+}
+
+#portfolio-nav {
+  width: 25rem;
+  margin: auto;
+  margin-bottom: 3rem;
+  padding-top: 3rem;
+}
+
+.filter {
+  margin: 0.7rem;
+  font-size: 1.3rem;
+  color: #666;
+  padding-bottom: 0.3rem;
+
+}
+
+.filter:hover{
+  cursor: pointer;
+  border-bottom: 1px solid #c33;
+  color: #666;
+}
+
+a.al {
+  border-bottom: 1px solid #c33;
+}
+
+.out-container .mix{
+    display: none;
+}
+
+
+
+
+
+
+/*Specific page styling - General*/
+
+.container{
+  margin-top: 3rem;
+}
+
+.portHead1{
+  position: relative;
+  left:0;
+  right:0;
+  margin: auto;
+  font-family: "Matel Sans";
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.portHead2{
+  font-family: "Martel Sans";
+  font-weight: 800;
+  font-size: 5rem;
+  line-height: 6.5rem;
+  text-align: center;
+  letter-spacing: -0.25rem;
+}
+
+.portHead3{
+  font-family: "Martel Sans";
+  font-weight: 800;
+  font-size: 3rem;
+  text-align: center;
+  letter-spacing: -0.25rem;
+}
+
+.gray{
+  color: #888;
+}
+
+.darkGray{
+  color: #666;
+}
+
+.trueBlack{
+  color: #444;
+}
+
+.caption-bg{
+  width: 100%;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  position: fixed;
+
+  background-position: left bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.content{
+  width: 100vw;
+  margin: auto;
+  font-size: 1.8rem;
+  line-height: 3.5rem;
+  font-family: "Martel";
+  font-weight: 300;
+  color: #888;
+}
+
+.content p{
+  margin: 5rem auto;
+  width: 60rem;
+}
+
+.caption-bg-gray{
+  width: 100vw;
+  background-color:#333;
+  height: 100vh;
+  top: 0;
+  left:0;
+  position: fixed;
+  z-index: -1;
+}
+
+.caption h2{
+  margin:1rem;
+}
+
+
+
+
+
+@media screen and (max-width: 900px) {
+  .about-container:first-child{
+    width: 150%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  nav > ul > li{
+    display: none;
+  }
+
+  .divider{
+    display: none;
+  }
+
+
+  #portrait{
+    display: none;
+  }
+
+  .aboutText1{
+    width: 80vw;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .portfolio-container{
+    width: 95vw;
+    padding: 0;
+  }
+
+  .about-container:first-child{
+    width: 200%;
+  }
+
+  .content{
+    padding-right: 0;
+  }
+
+  #inTrigger{
+    width: 100vw;
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-size: 150vw;
+  }
+}
