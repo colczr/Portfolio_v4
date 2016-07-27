@@ -2,17 +2,16 @@
 var controller = new ScrollMagic.Controller();
 
 
-var tweenHeroFade = new TweenMax.fromTo(".home-container", 1, {autoAlpha: 1}, {autoAlpha: 0, ease: Linear.easeNone});
-
-var tweenHeroSlow = new TweenMax.fromTo(".home-container", 1, {y: 0}, {y:-50, ease: Linear.easeNone});
+var tweenHeroFade = new TweenMax.fromTo(".home-container", 0.3, {autoAlpha: 1}, {autoAlpha: 0, ease: Linear.easeNone});
+var tweenHeroSlow = new TweenMax.fromTo(".home-container", 0.3, {y: 0}, {y:-50, ease:Circ.easeIn});
 
 
 // build scene
-var smscene3 = new ScrollMagic.Scene({duration: 200})
+var smscene3 = new ScrollMagic.Scene({triggerElement: "#home", offset:500})
   .setTween(tweenHeroFade)
   .addTo(controller);
 
-var smscene3a = new ScrollMagic.Scene({duration: 200})
+var smscene3a = new ScrollMagic.Scene({triggerElement: "#home", offset:500})
   .setTween(tweenHeroSlow)
   .addTo(controller);
 
@@ -93,22 +92,22 @@ var smseneContactIn = new ScrollMagic.Scene({triggerElement: "#contact", duratio
 
 // var smsceneLogo = new ScrollMagic.Scene({triggerElement: ".portfolio-container"})
 //   // trigger a velocity opaticy animation
-//   .setVelocity("#logo_small", {opacity: 1}, {duration: 200, easing:Elastic})
+//   .setVelocity("#logo_small", {opacity: 1}, {duration: 200, s:Elastic})
 //   .addTo(controller);
 
-var smsceneDivider2 = new ScrollMagic.Scene({triggerElement: "#portfolio", duration:50})
+var smsceneDivider2 = new ScrollMagic.Scene({triggerElement: "#portfolio", duration: 50})
   // trigger a velocity opaticy animation
-  .setTween(".divider", {y: "31rem"})
+  .setTween(".divider", 1, {y: "31rem"})
   .addTo(controller);
 
 var smsceneDivider3 = new ScrollMagic.Scene({triggerElement: "#about", duration: 50})
   // trigger a velocity opaticy animation
-  .setTween(".divider", {y: "61rem"})
+  .setTween(".divider", 1, {y: "61rem"})
   .addTo(controller);
 
 var smsceneDivider4 = new ScrollMagic.Scene({triggerElement: "#contact", duration: 50})
   // trigger a velocity opaticy animation
-  .setTween(".divider", {y: "91rem"})
+  .setTween(".divider", 1, {y: "91rem"})
   .addTo(controller);
 
 

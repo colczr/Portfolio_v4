@@ -46,13 +46,14 @@ include("head.php");
 					<div class="portfolio-container reg-container grid">
 						<h2>I design things.</h2>
 						<div class="portfolio">
-							<div class="project" style="background-color: #356">
+							<div class="project" style="background-color: #3ff">
+								<a href="kasa.php" style="display: block; width: 100%; height: 100%;"></a>
 							</div>
 
-							<div class="project" style="background-color: #676">
+							<div class="project" style="background-color: #f76">
 							</div>
 
-							<div class="project" style="background-color: #800">
+							<div class="project" style="background-color: #81f">
 							</div>
 
 							<div class="project" style="background-color: #1ff">

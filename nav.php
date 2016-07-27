@@ -4,7 +4,7 @@
 
       <ul style="padding-right: 0.2rem;">
           <a href="index.php#portfolio"><img id="logo_small" style="opacity: 1" src="img/logo_small.png"/></a>
-          <a href="index.php#portfolio" style="color: #c42128; font-family: Gzb; position: fixed; top: 7rem; right: 5rem">Home</a>
+          <a href="index.php#portfolio" style="color: #c42128; font-family: 'Martel Sans'; position: fixed; top: 7rem; right: 5rem">Home</a>
 
         <?php
           //

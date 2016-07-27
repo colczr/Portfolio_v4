@@ -5,55 +5,50 @@ include("authentication.php");
 
 include("head.php");
 ?>
-?>
+<body>
+	<div class="load-screen">
+			<div class="tm-loader"><div class="spinner"></div></div>
+	</div>
 
-	<body>
-		<div class="load-screen">
-				<div class="tm-loader"><div class="spinner"></div></div>
-		</div>
+	<div class="project-container">
 
-		<div class="project-container">
-
-		<?php
-			include "nav.php";
+	<?php
+		include "nav.php";
 
 
-		?>
-			<div class="content">
-				<div class="caption-bg-gray">
-				</div>
-					<div class="caption-bg" style="background-image: url(img/bg4.png);">
-
-					</div>
-
-				<div class="caption">
-					<h2>Kasa</h2>
-					<p>Mobile App UX Design for the Smart Home<br><br>
-						PixUp is a peer-to-peer platform that connects vehicle owners (drivers) with people who need delivery service (users). Drivers accept delivery requests from the users and in return get paid for their service.</p>
-				</div>
+	?>
+		<div class="content">
 
 
 
-				<div class="caption2" style="padding-top: 100vh;">
-					<h2>Design what you would buy.</h2>
-					<p>Mobile App UX Design<br><br>
-						Client: PixUp (Ann Arbor Startup)<br>Timeline: 4 months<br>Team size: 5<br>My role: UX Designer / UX Researcher / Graphic Designer<br>Skills: <img src="img/divider.png" width="100%"/></p>
-					<p>- "You said there are other apps that offer the same thing, <span>what distinguishes your app from theirs?</span>" <br>It was the first question that we asked our client. <br>
-						- "We want to stand out by having best user experience and we would like your help. Well, also most of those companies haven't come to Ann Arbor yet and we want to start local first."
-					</p>
-				</div>
+			<div>
+				<h1 class="portHead1">Kasa<br><div class="divider-line"></div></h3>
 
+				<h2 class="portHead2 trueBlack">Enabling smart home users to <br>automate daily routines </h2>
 
+				<p>Kasa is a smart home ecosystem developed by TP-Link Research America, where I interned during summer 2016. Kasa ecosystem includes an app that provides integrated control as well as a multitude of smart home devices. The smart home aims to provide a new way of interacting with traditional home devices and automation is an essential part of providing a convenient and care-free experience for the users, to make the home actually smart.
+				</p>
+
+				<h4 class="portHead4 darkGray">The apparent "dumbness" of a <i>smart</i> home</h3>
+				<p>The two problems that the smart home is facing right now is its apparent "dumbness" and fragmentation. First of all, it is rather "dumb" in its current stage: most of the companies define a "smart" device basically as using a phone app to control some features on a traditional device. Well, I would say, if I simply moved my light switch from the wall to my phone, that does not seem to make my lightbulb that much <i>smarter</i>.
+				Some companies realized the important role of automation in a smart home: if my lightbulb turns up automatically after sunset when I'm at home, or if all the lights in my house turn off with my bedroom light after 11, then that is something smart and takes away some of my frustrations of repeating my brainless but necessary daily routines.</p>
+
+				<h3 class="portHead3 darkGray">How to improve on existing smart home automation products</h3>
+				<h4 class="portHead4 darkGray">It works great - in most cases.</h3>
+				<p>I researched a few applications that offer either smart home automation or a broader sense of everyday automation. In terms of apps specifically for home automation, major companies brands like Samsung Smart Things or Philips Hue provide very simple automations such as a simple timer for devices. </p>
 			</div>
+
+
 		</div>
+	</div>
 
 
 
 
-		<?php
-			include('foot.php');
-		 ?>
-	</body>
+	<?php
+		include('foot.php');
+	 ?>
+</body>
 </html>
 
 <?php
