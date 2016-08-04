@@ -48,7 +48,7 @@
 			<div class="section-container">
 				<div class="section" id="home">
 					<p class="hero-1">&nbsp;&nbsp;Please enter password
-						<form method="POST"><br><input class="hero-1" type="text" name="password">
+						<form method="POST"><br><input type="text" name="password">
 						<br><input type="submit" class="hero-1" style="display:block; width: 10rem;" name="submit"></form>
 					</p>
 				</div>

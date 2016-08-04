@@ -44,19 +44,25 @@ include("head.php");
 				<div id="portfolio" class="section">
 
 					<div class="portfolio-container reg-container grid">
-						<h2>I design things.</h2>
 						<div class="portfolio">
-							<div class="project" style="background-color: #3ff">
-								<a href="kasa.php" style="display: block; width: 100%; height: 100%;"></a>
+							<div class="project" style="background-image: url('img/mendbg.png'); background-color: #ddd;">
+								<a href="kasa.php" style="display: block; width: 25vw; height: 100vh; position: fixed;"></a>
+								<h2>Kasa</h2><hr>
+								<h3>Enabling smart home users to automate daily routines</h3>
 							</div>
 
-							<div class="project" style="background-color: #f76">
+							<div class="project" style="background-image: url('img/mendbg.png');background-color: #999;">
+								<h2>Mend</h2><hr>
+								<h3>Helping psychotherapists understand their patients' lives</h3>
+							</div>
+							<div class="project" style="background-image: url('img/mendbg.png');background-color: #2cf">
+								<h2>Post-it Plus</h2><hr>
+								<h3>Enabling smart home users to automate daily routines</h3>
 							</div>
 
-							<div class="project" style="background-color: #81f">
-							</div>
-
-							<div class="project" style="background-color: #1ff">
+							<div class="project" style="background-image: url('img/mendbg.png');background-color: #1ff">
+								<h2>Ryce</h2><hr>
+								<h3>Designing the ultimate smart rice cooker experience</h3>
 							</div>
 						</div>
 

@@ -230,17 +230,6 @@ div.gridItem{
   height: auto;
 }
 
-#wave{
-  background-image: url("../img/wave.png");
-  background-size: cover;
-  background-position:top;
-  background-repeat: no-repeat;
-  bottom:0vh;
-  width: 100vw;
-  height: 17vh;
-  position: fixed;
-  z-index: 9997;
-}
 
 .hero-transition{
   width: 100vw;
@@ -338,10 +327,6 @@ div.gridItem{
 
   left: 0;
   right: 0;
-}
-
-#portfolio{
-
 }
 
 #filler{
@@ -482,7 +467,6 @@ a.al {
 
 
 
-
 /*Specific page styling - General*/
 
 .container{
@@ -526,7 +510,7 @@ a.al {
   font-size: 2rem;
   text-align: left;
   letter-spacing: -0.08rem;
-  padding-top: 4rem;
+  padding-top: 3rem;
   padding-bottom: 2rem;
 }
 
@@ -598,8 +582,47 @@ a.al {
   margin:1rem;
 }
 
+.project h2{
+  position: static;
+  font-size: 2rem;
+  letter-spacing: 0.05rem;
+  left: 0;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 5rem;
+  padding-bottom: 0;
+  margin: 0;
+}
 
+.project h3{
+  position: static;
+  text-align: left;
+  left: 0;
+  font-size: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 0;
+  font-family: "Martel";
+  letter-spacing: -0.05rem;
+}
 
+.project hr{
+  width: 3rem;
+  margin: 0;
+  padding:0;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-top: 0.3rem #333 solid;
+}
+
+.project{
+  background-repeat: none;
+  background-size: cover;
+  background-position: center bottom;
+
+}
 
 
 @media screen and (max-width: 900px) {
